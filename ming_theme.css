@@ -1,0 +1,113 @@
+html .tui-editor-contents {
+  font-size: 16px;
+}
+
+.tui-editor-contents pre[class*="lang-"]:not(.lang-youtube):not(.lang-repl):not(.lang-codepen) {
+  background: #1c1d21;
+  color: #c0c5ce;
+}
+
+.tui-editor-contents .hljs-comment,
+.tui-editor-contents .hljs-quote {
+  color: #b6b18b;
+}
+.tui-editor-contents .hljs-deletion,
+.tui-editor-contents .hljs-name,
+.tui-editor-contents .hljs-regexp,
+.tui-editor-contents .hljs-selector-class,
+.tui-editor-contents .hljs-selector-id,
+.tui-editor-contents .hljs-tag,
+.tui-editor-contents .hljs-template-variable,
+.tui-editor-contents .hljs-variable {
+  color: #eb3c54;
+}
+.tui-editor-contents .hljs-built_in,
+.tui-editor-contents .hljs-link,
+.tui-editor-contents .hljs-literal,
+.tui-editor-contents .hljs-meta,
+.tui-editor-contents .hljs-number,
+.tui-editor-contents .hljs-params,
+.tui-editor-contents .hljs-type {
+  color: #e7ce56;
+}
+.tui-editor-contents .hljs-attribute {
+  color: #ee7c2b;
+}
+.tui-editor-contents .hljs-addition,
+.tui-editor-contents .hljs-bullet,
+.tui-editor-contents .hljs-string,
+.tui-editor-contents .hljs-symbol {
+  color: #4fb4d7;
+}
+.tui-editor-contents .hljs-section,
+.tui-editor-contents .hljs-title {
+  color: #78bb65;
+}
+.tui-editor-contents .hljs-keyword,
+.tui-editor-contents .hljs-selector-tag {
+  color: #b45ea4;
+}
+.tui-editor-contents .hljs-emphasis {
+  font-style: italic;
+}
+.tui-editor-contents .hljs-strong {
+  font-weight: 700;
+}
+
+/* 변경 */
+.tui-editor-contents .hljs-attr {
+  color: #f8c555;
+}
+
+.tui-editor-contents code[data-backticks] {
+  background-color:#f3f5f7;
+  padding:4.5px 6px;
+  color:#00214d;
+  font-family:inherit;
+}
+
+html .tui-editor-contents h1,
+html .tui-editor-contents h2,
+html .tui-editor-contents h3,
+html .tui-editor-contents h4,
+html .tui-editor-contents h5 {
+  border-bottom:none;
+  color:#ff526f;
+}
+
+html .tui-editor-contents blockquote {
+  border-left:5px solid #00ebc7;
+  background-color:#f3f5f7;
+  color:#1b2e46;
+  padding:20px;
+  font-style:italic;
+}
+
+html .tui-editor-contents blockquote code[data-backticks] {
+  background-color:#d3d5d7;
+}
+
+html .tui-editor-contents a {
+  position:relative;
+  color:#00ebc7 !important;
+  text-decoration:none !important;
+}
+
+html .tui-editor-contents a::after {
+  content:"";
+  position:absolute;
+  height:0;
+  width:100%;
+  background-color:#00ebc7;
+  left:0;
+  bottom:-5px;
+  transition:.3s;
+  opacity:0;
+}
+
+html .tui-editor-contents a:hover::after {
+  height:2px;
+  opacity:1;
+}
+
+/* https://www.daleseo.com/ 님의 블로그 스타일 색상을 많이 따라해서 만들었습니다. */
